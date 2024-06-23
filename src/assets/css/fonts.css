@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "GothamBold";
+    src: url("../fonts/Gotham-Font/GothamBold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "GothamMedium";
+    src: url("../fonts/Gotham-Font/GothamMedium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "GothamBook";
+    src: url("../fonts/Gotham-Font/GothamBook.ttf") format("truetype");
+    font-style: normal;
+}
+  
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("../fonts/lato/Lato-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url("../fonts/lato/Lato-Black.ttf") format("truetype");
+    font-weight: bolder;
+    font-style: normal;
+}
+  

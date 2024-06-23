@@ -1,0 +1,16 @@
+.half-modal-popup {
+    --background: transparent !important;
+    
+    &::part(content) {
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+  
+    &::part(backdrop) {
+      background-color: rgba(29, 52, 67, 0.5);
+    }
+  
+    ion-content {
+      --background: transparent !important;
+    }
+}

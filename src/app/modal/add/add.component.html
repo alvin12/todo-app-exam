@@ -1,0 +1,63 @@
+<div class="inner-content base_holder">
+  <ion-row class="middle_center_text ion-padding">
+    <ion-col class="ion-no-padding" size="6">
+      <h2 class="head_title ion-no-margin">
+        Let's start!
+      </h2>
+    </ion-col>
+    <ion-col class="ion-no-padding ion-text-end ion-pading-bottom" size="6">
+      <ion-button fill="clear" (click)="close()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-no-padding">
+      <form [formGroup]="formGroup">
+
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="10" class="search_holder">
+            <ion-input class="custom_holder" formControlName="title" required="true"
+              placeholder="What to todo"></ion-input>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-margin-bottom">
+          <ion-col size="10" class="ion-no-padding">
+            <span class="lbl_danger" *ngIf="formGroup.controls['title'].hasError('required')">
+              <small>This field is required</small>
+            </span>
+          </ion-col>
+        </ion-row>
+
+
+        <ion-row class="ion-justify-content-center" [ngClass]="{'add-padding-bottom': formGroup.value.description }">
+          <ion-col size="10" class="search_holder">
+            <ion-textarea formControlName="description" required="true"
+              placeholder="Type something here..."></ion-textarea>
+          </ion-col>
+        </ion-row>
+        <ion-row class="ion-justify-content-center ion-margin-bottom">
+          <ion-col size="10" class="ion-no-padding">
+            <span class="lbl_danger"
+            *ngIf="formGroup.controls['description'].hasError('required')">
+            <small>This field is required</small>
+          </span>
+          </ion-col>
+        </ion-row>
+
+      </form>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="ion-no-padding" size="6">
+      <ion-button (click)="clearForm()" expand="full" color="danger" class="btn_custom">
+        Clear
+      </ion-button>
+    </ion-col>
+    <ion-col class="ion-no-padding" size="6">
+      <ion-button (click)="saveTask()" expand="full" class="btn_custom">
+        Submit
+      </ion-button>
+    </ion-col>
+  </ion-row>
+</div>

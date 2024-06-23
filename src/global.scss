@@ -35,3 +35,22 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+@import "assets/css/fonts.css";
+@import "assets/css/text-style.css";
+@import "assets/css/modal.css";
+
+
+
+ion-toast.custom-toast-primary {
+  --background: var(--ion-color-primary);
+  --box-shadow: 3px 3px 10px 0 rgba(84, 96, 254, 255, 0.2);
+  --color: #ffff;
+  --border-radius: 10px;
+}
+
+ion-toast.custom-toast-danger {
+  --background: var(--ion-color-danger);
+  --box-shadow: 3px 3px 10px 0 rgba(84, 96, 254, 255, 0.2);
+  --color: #ffff;
+  --border-radius: 10px;
+}

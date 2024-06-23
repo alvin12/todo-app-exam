@@ -1,0 +1,21 @@
+.title_ {
+    font-family: 'Lato-Black';
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.head_title {
+    font-family: 'Lato-Black';
+    font-size: 1rem;
+}
+
+.parag_ {
+    font-family: 'Lato-Regular';
+    text-wrap: wrap;
+    color: #9e9e9e;
+}
+
+/* Label */
+.lbl_danger {
+    color: var(--ion-color-danger);
+}
