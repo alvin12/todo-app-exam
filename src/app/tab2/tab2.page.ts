@@ -58,7 +58,6 @@ export class Tab2Page {
           this.isNewTodo = true
         }
         this.tempTodoList = newTempList
-        console.log("todoList", this.todoList)
       })
   }
 
@@ -101,7 +100,6 @@ export class Tab2Page {
         }
       });
     });
-    console.log("isMovingToPending", this.tempTodoList)
     this.storagesrvc.createTask(this.tempTodoList, true)
     let msg = {
       msg : "Setting back to todo's...",

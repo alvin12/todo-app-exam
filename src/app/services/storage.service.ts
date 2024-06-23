@@ -20,14 +20,12 @@ export class StorageService {
       if(value){
         let existData = JSON.parse(value)
         let checkIfIDExist = _.filter(existData, { 'id': params.id});
-        console.log("checkIfIDExist", checkIfIDExist)
         params.id = checkIfIDExist.length > 0 ? params.id + 1 : params.id
         newArr = existData.concat(params)
       }else{
         newArr = [params]
       }
     }
-    // console.log("newArr", newArr)
     await Preferences.set({
       key: "task",
       value: JSON.stringify(newArr),

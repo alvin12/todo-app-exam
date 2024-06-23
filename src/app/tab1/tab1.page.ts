@@ -36,8 +36,6 @@ export class Tab1Page {
   findTask() {
     let titleHasResult = this.todoList.filter((item: any) => String(item.title).startsWith(this.searchTask.toLowerCase()))
     let descriptionHasResult = this.todoList.filter((item: any) => String(item.description).startsWith(this.searchTask.toLowerCase()))
-    console.log("titleHasResult", titleHasResult)
-    console.log("descriptionHasResult", descriptionHasResult)
     if(this.searchTask){
       if(titleHasResult.length > 0){
         this.todoList = titleHasResult
@@ -59,7 +57,6 @@ export class Tab1Page {
   
       modal.onDidDismiss()
         .then(resp => {
-          console.log("modal", resp)
           this.getTask()
         })
       modal.present();

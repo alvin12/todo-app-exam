@@ -27,7 +27,6 @@ export class AddComponent implements OnInit {
   ) {
     let getListLength = this.navparams.get("tasks").length
     this.id = getListLength <= 0 ? 1 : getListLength + 1
-    console.log("current id", this.id)
   }
 
   ngOnInit() { }
